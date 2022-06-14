@@ -1,0 +1,90 @@
+** start of HTML **
+
+<h1 id="title">Survey Form</h1>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<p id="description">Thank you for taking this survey</p>
+<form id="survey-form"> 
+  <fieldset>
+    <div>
+   <label id="name-label" for="name">Name</label><input id="name" required type="text" placeholder="First and Last Name"/>
+   </div>
+   <div>
+  <label id="email-label" for="email">Email</label><input id="email" required type="email" placeholder="Email"/>
+  </div>
+  <div>
+    <label id="number-label" for="number">Age</label><input id="number" required type="number" min="18" max="120" placeholder="Age"/>
+    </div>
+  </fieldset>
+  <fieldset>
+  <p>Which option best describes your role?</P>
+  <select id="dropdown"/>
+  <option disabled selected value>select current role</option>
+  <option value="Student">Student</option>
+  <option value="Full Time Job">Full Time Job</option>
+  <option value="Full Time Learner">Full Time Learner</option>
+  <option value="Other">Other</option>
+  <option value="Prefer not to say">Prefer not to say</option>
+ </fieldset>
+ <div>
+   <fieldset>
+    <input type="radio" id="contactChoice1"
+     name="contact" value="email">
+    <label for="contactChoice1">Email</label>
+
+    <input type="radio" id="contactChoice2"
+     name="contact" value="phone">
+    <label for="contactChoice2">Phone</label>
+
+    <input type="radio" id="contactChoice3"
+     name="contact" value="mail">
+    <label for="contactChoice3">Mail</label>
+    </fieldset>
+  </div>
+  <div>
+    <p>Where did you hear about us?</P>
+    <input type="checkbox" id="checkbox1" name="freeCodeCamp" value="freeCodeCamp"><label for="radiochoice1">freeCodeCamp Website</label>
+    </div>
+    <div>
+    <input type="checkbox" id="checkbox2" name="freeCodeCamp" value="freeCodeCamp"><label for="radiochoice1">freeCodeCamp YouTube</label>
+    </div>
+    <div>
+    <input type="checkbox" id="checkbox3" name="freeCodeCamp" value="freeCodeCamp"><label for="radiochoice1">freeCodeCamp Newsletter</label>
+    </div>
+
+  </div>
+    <button type="submit" id="submit">Submit</button>
+    <p>Anything else you would like us to know?</p>
+    <textarea> </textarea>
+  </div>
+</form>
+
+** end of HTML **
+
+** start of CSS **
+
+body {
+text-align: center;
+color: 22657f;
+display: inline;
+width: 100px;
+height: 100px;
+padding: 5px;
+}
+body {
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,237,198,1) 100%);
+}
+fieldset {
+ background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,237,198,1) 100%);
+padding: 5px;
+width: auto;
+}
+input {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+** end of CSS **
+
